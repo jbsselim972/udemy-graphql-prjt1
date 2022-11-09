@@ -1,5 +1,6 @@
-const app = require('./server/server');
+require("dotenv").config();
+const app = require("./server/server");
 
 app.listen(4000, () => {
-  console.log('Listening');
+  console.log("Listening");
 });
