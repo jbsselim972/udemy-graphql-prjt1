@@ -10,7 +10,7 @@ const app = express();
 // Replace with your mongoLab URI
 const MONGO_URI = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.bidtf.mongodb.net/?retryWrites=true&w=majority`;
 if (!MONGO_URI) {
-  throw new Error("You must provide a MongoLab URI");
+  throw new Error("You must provide a MongoDB Atlas URI");
 }
 
 mongoose.Promise = global.Promise;
